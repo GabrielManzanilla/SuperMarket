@@ -169,7 +169,7 @@
             <li>
 
                 <a href="#">
-                    <img src="img/icons8-usuario-50.png" alt="Ícono de usuario" style="width: 24px; height: 24px; margin-right: 10px;"> <!-- Agrega la imagen al enlace -->
+                    <img src="../img/icons8-usuario-50.png" alt="Ícono de usuario" style="width: 24px; height: 24px; margin-right: 10px;"> <!-- Agrega la imagen al enlace -->
                     AClientes </a>
                 <!-- Submenú para clientes -->
                 <div class="submenu">
@@ -179,8 +179,8 @@
                 </div>
             </li>
             
-            <li><a href="ProductosAlta.php">Alta de Productos</a></li>
-            <li><a href="ProductoVerBD.php">Ver Productos</a></li>
+            <li><a href="../productos/ProductosAlta.php">Alta de Productos</a></li>
+            <li><a href="../productos/ProductoVerBD.php">Ver Productos</a></li>
         </ul>
     </div>
 
@@ -216,7 +216,7 @@
                 <tbody>
                     <?php
                     // Conexión a la base de datos
-                    include("conectar.php");
+                    include("../conectar.php");
 
                     // Consulta para obtener los clientes
                     $consulta = "SELECT * FROM clientes";

@@ -107,12 +107,12 @@
 </head>
 <body>
     <div class="container">
-        <a href="index.php" class="exit-btn">Salir</a>
+        <a href="../index.php" class="exit-btn">Salir</a>
 
         <h2>Clientes</h2>
 
         <?php
-        include("conectar.php");
+        include("../conectar.php");
         $consulta = "SELECT * FROM clientes";
         $resultado = mysqli_query($enlace, $consulta);
 

@@ -68,7 +68,7 @@
         <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST['Id'])) {
             $id = trim($_POST['Id']);
-            include("conectar.php");
+            include("../conectar.php");
             
             // Consulta preparada
             $consulta = "DELETE FROM clientes WHERE ID_CLIENTE = ?";
@@ -90,7 +90,7 @@
         <a href="ClientesVer.php" class="btn">Mostrar Clientes</a>
         <a href="ClientesEliminar.php" class="btn">Eliminar Clientes</a>
         <!-- Botón para salir -->
-        <a href="index.php" class="exit-btn">HOME</a>
+        <a href="../index.php" class="exit-btn">HOME</a>
     </div>
 </body>
 </html>
