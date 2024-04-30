@@ -112,14 +112,14 @@
                     Alta de Clientes </a>
                 <!-- Submenú para clientes -->
                 <div class="submenu">
-                    <a href="clientealta.php">Alta de Clientes</a>
-                    <a href="ClientesEliminar.php">Eliminar Clientes</a>
-                    <a href="ClientesModificar.php">Modificar Clientes</a>
+                    <a href="clientes/clientealta.php">Alta de Clientes</a>
+                    <a href="clientes/ClientesEliminar.php">Eliminar Clientes</a>
+                    <a href="clinetes/ClientesModificar.php">Modificar Clientes</a>
                 </div>
             </li>
 
-            <li><a href="ProductosAlta.php">Alta de Productos</a></li>
-            <li><a href="ProductoVerBD.php">Ver Productos</a></li>
+            <li><a href="productos/ProductosAlta.php">Alta de Productos</a></li>
+            <li><a href="productos/ProductoVerBD.php">Ver Productos</a></li>
         </ul>
     </div>
 </body>
