@@ -60,7 +60,7 @@
     <h2>Clientes</h2>
 
     <?php
-    include("../../index.php.php");
+    include("../../conectar.php");
     $consulta = "SELECT * FROM clientes";
     $resultado = mysqli_query($enlace, $consulta);
 
