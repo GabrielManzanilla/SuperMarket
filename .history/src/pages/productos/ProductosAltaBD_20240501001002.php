@@ -14,16 +14,18 @@
         $idProv = trim($_POST['idProv']);
 
         // Incluye el archivo de conexión a la base de datos
-        include("../../conectar.php");
+        include("../../index.php");
 
         // Realiza la consulta para insertar los datos en la tabla de productos
         $consulta = "INSERT INTO producto (nombre_producto, id_categoria, id_proveedor, precio_unitario) 
                      VALUES ('$nom', '$idCat', '$idProv', '$precio')";
         $resultado = mysqli_query($enlace, $consulta);
 
-        $resultado = mysqli_query($enlace, $consulta);
-        if (!$resultado) {
-            die('Error en la consulta: ' . mysqli_error($enlace));
+        // Verifica si la consulta se realizó con éxito
+        if ($resultado) {
+            echo "Se ha creado un nuevo producto exitosamente";
+        } else {
+            echo "Ha ocurrido un error";
         }
     } else {
         echo "Favor de introducir datos, todos los campos son obligatorios";

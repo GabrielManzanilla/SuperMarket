@@ -49,6 +49,6 @@
 
     <br>
     <!-- Enlace para regresar al menú principal -->
-    <a href="../../../index.php">Regresar al Menú Principal</a>
+    <a href="ClientesVer.php">Regresar al Menú Principal</a>
 </body>
 </html>

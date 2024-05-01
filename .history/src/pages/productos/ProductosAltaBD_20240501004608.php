@@ -21,9 +21,11 @@
                      VALUES ('$nom', '$idCat', '$idProv', '$precio')";
         $resultado = mysqli_query($enlace, $consulta);
 
-        $resultado = mysqli_query($enlace, $consulta);
-        if (!$resultado) {
-            die('Error en la consulta: ' . mysqli_error($enlace));
+        // Verifica si la consulta se realizó con éxito
+        if ($resultado) {
+            echo "Se ha creado un nuevo producto exitosamente";
+        } else {
+            echo "Ha ocurrido un error";
         }
     } else {
         echo "Favor de introducir datos, todos los campos son obligatorios";

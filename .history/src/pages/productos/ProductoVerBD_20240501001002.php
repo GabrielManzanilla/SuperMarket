@@ -8,7 +8,7 @@
 
     <?php
     // Incluye el archivo de conexión a la base de datos
-    include("../../conectar.php");
+    include("conectar.php");
 
     // Realiza la consulta para obtener la lista de productos
     $consulta = "SELECT * FROM producto";
@@ -49,6 +49,6 @@
 
     <br>
     <!-- Enlace para regresar al menú principal -->
-    <a href="../../../index.php">Regresar al Menú Principal</a>
+    <a href="ClientesVer.php">Regresar al Menú Principal</a>
 </body>
 </html>
