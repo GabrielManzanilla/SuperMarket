@@ -1,7 +1,11 @@
 <?php
 $enlace = mysqli_connect("localhost", "root", "", "supermercado2");
 
-if (!$enlace) {
-    die("No pudo conectarse la base de datos: " . mysqli_error($enlace));
+try {
+    if (!$enlace) {
+        throw new Exception("No pudo conectarse la base de datos: " . mysqli_connect_error());
+    }
+} catch (Exception $e) {
+    echo 'Error: ' . $e->getMessage();
 }
 ?>

@@ -60,7 +60,7 @@
     <h2>Clientes</h2>
 
     <?php
-    include("../conectar.php");
+    include("../../index.php.php");
     $consulta = "SELECT * FROM clientes";
     $resultado = mysqli_query($enlace, $consulta);
 
@@ -102,6 +102,6 @@
     <a href="ClientesEliminar.php" class="button">Eliminar Clientes</a>
     <a href="ClientesModificar.php" class="button">Modificar Clientes</a>
     <!-- Botón para salir -->
-    <a href="../index.php" class="exit-btn">Salir</a>
+    <a href="../../../index.php" class="exit-btn">Salir</a>
 </body>
 </html>

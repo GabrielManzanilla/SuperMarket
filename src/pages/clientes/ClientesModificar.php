@@ -107,12 +107,12 @@
 </head>
 <body>
     <div class="container">
-        <a href="../index.php" class="exit-btn">Salir</a>
+        <a href="../../../index.php" class="exit-btn">Salir</a>
 
         <h2>Clientes</h2>
 
         <?php
-        include("../conectar.php");
+        include("../../index.php.php");
         $consulta = "SELECT * FROM clientes";
         $resultado = mysqli_query($enlace, $consulta);
 
@@ -120,7 +120,6 @@
             echo "Error en la consulta";
         }
         ?>
-
         <table>
             <thead>
                 <tr>
@@ -137,6 +136,7 @@
                     $nombre = $renglon['nombre_cliente'];
                     $dir = $renglon['direccion_cliente'];
                     $tel = $renglon['telefono_cliente'];
+                
                 ?>
                     <tr>
                         <td><?php echo $id; ?></td>

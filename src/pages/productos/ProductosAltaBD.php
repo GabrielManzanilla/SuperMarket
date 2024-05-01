@@ -14,7 +14,7 @@
         $idProv = trim($_POST['idProv']);
 
         // Incluye el archivo de conexión a la base de datos
-        include("../conectar.php");
+        include("../../index.php.php");
 
         // Realiza la consulta para insertar los datos en la tabla de productos
         $consulta = "INSERT INTO producto (nombre_producto, id_categoria, id_proveedor, precio_unitario) 

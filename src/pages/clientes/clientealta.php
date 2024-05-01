@@ -216,7 +216,7 @@
                 <tbody>
                     <?php
                     // Conexión a la base de datos
-                    include("../conectar.php");
+                    include("../../index.php.php");
 
                     // Consulta para obtener los clientes
                     $consulta = "SELECT * FROM clientes";

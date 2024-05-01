@@ -56,12 +56,12 @@
 </head>
 <body>
     <!-- Botón salir -->
-    <a href="../index.php" class="exit-btn">Salir</a>
+    <a href="../../../index.php" class="exit-btn">Salir</a>
     <form action="ClientesModificarBD_Update.php" method="post">
         <?php
         if (strlen($_POST['Id']) >= 1) {
             $id = trim($_POST['Id']);
-            include("../conectar.php");
+            include("../../index.php.php");
             
             $consulta = "SELECT * FROM clientes WHERE ID_CLIENTE='$id'";
             $resultado = mysqli_query($enlace, $consulta);

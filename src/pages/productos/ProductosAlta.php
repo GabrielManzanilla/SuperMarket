@@ -13,7 +13,7 @@
             <option value="0">Seleccione</option>
             <!-- Aquí se generan las opciones de categorías -->
             <?php
-            include("../conectar.php");
+            include("../../index.php.php");
             $cat = "select * from categorias";
             $res_cat = mysqli_query($enlace, $cat);
             if (!$res_cat) {

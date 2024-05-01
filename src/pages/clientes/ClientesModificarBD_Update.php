@@ -57,7 +57,7 @@
 </head>
 <body>
     <!-- Botón salir -->
-    <a href="../index.php" class="exit-btn">Salir</a>
+    <a href="../../../index.php" class="exit-btn">Salir</a>
     <div class="container">
         <?php
         if (isset($_POST['Id']) && strlen($_POST['Id']) >= 1) {
@@ -65,7 +65,7 @@
             $nombre = trim($_POST['nombre']);
             $dir = trim($_POST['dir']);
             $tel = trim($_POST['telefono']);
-            include("../conectar.php");
+            include("../../index.php.php");
             $consulta = "UPDATE clientes SET nombre_cliente='$nombre', direccion_cliente='$dir', telefono_cliente='$tel' WHERE id_cliente='$id'";
             $resultado = mysqli_query($enlace, $consulta);
             if ($resultado) {
