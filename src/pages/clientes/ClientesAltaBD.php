@@ -67,7 +67,7 @@
             $nombre = trim($_POST['nombre']);
             $dir = trim($_POST['dir']);
             $tel = trim($_POST['telefono']);
-            include("../../index.php.php");
+            include("../../index.php");
             $consulta = "INSERT INTO clientes (nombre_cliente, direccion_cliente, telefono_cliente) VALUES ('$nombre', '$dir', '$tel')";
             $resultado = mysqli_query($enlace, $consulta);
             if ($resultado) {

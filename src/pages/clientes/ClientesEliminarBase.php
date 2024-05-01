@@ -68,7 +68,7 @@
         <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST['Id'])) {
             $id = trim($_POST['Id']);
-            include("../../index.php.php");
+            include("../../index.php");
             
             // Consulta preparada
             $consulta = "DELETE FROM clientes WHERE ID_CLIENTE = ?";

@@ -65,7 +65,7 @@
             $nombre = trim($_POST['nombre']);
             $dir = trim($_POST['dir']);
             $tel = trim($_POST['telefono']);
-            include("../../index.php.php");
+            include("../../index.php");
             $consulta = "UPDATE clientes SET nombre_cliente='$nombre', direccion_cliente='$dir', telefono_cliente='$tel' WHERE id_cliente='$id'";
             $resultado = mysqli_query($enlace, $consulta);
             if ($resultado) {

@@ -83,7 +83,7 @@
     <h2>Clientes</h2>
 
     <?php
-    include("../../index.php.php");
+    include("../../index.php");
     $consulta = "SELECT * FROM clientes";
     $resultado = mysqli_query($enlace, $consulta);
 

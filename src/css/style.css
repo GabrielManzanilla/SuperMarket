@@ -5,6 +5,7 @@
     /* Color de fondo */
     margin: 0;
     padding: 0;
+    text-align: center;
     align-items: center;
     justify-content: center;
 }
@@ -135,10 +136,20 @@
 }
 
 
-.main{
-    background-color: #8c8c8c;
-    width: 500px;
+.main {
+    width: 100%;
+    padding-top: 100px;
     height: auto;
-    text-align: center;
+    display: flex; 
+    justify-content: center; 
+    position: relative;
+}
+
+.form {
+    position: relative; 
+    background-color: #8c8c8c; 
+    width: 500px;
+    padding: 20px; 
+    border-radius: 10px; 
 }
 

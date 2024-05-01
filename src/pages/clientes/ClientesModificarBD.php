@@ -61,7 +61,7 @@
         <?php
         if (strlen($_POST['Id']) >= 1) {
             $id = trim($_POST['Id']);
-            include("../../index.php.php");
+            include("../../index.php");
             
             $consulta = "SELECT * FROM clientes WHERE ID_CLIENTE='$id'";
             $resultado = mysqli_query($enlace, $consulta);
